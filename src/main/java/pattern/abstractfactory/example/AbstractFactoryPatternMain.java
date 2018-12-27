@@ -1,5 +1,11 @@
 package pattern.abstractfactory.example;
 
+/**
+ * We are going to create a Shape and Color interfaces and concrete classes implementing these interfaces.
+ * We create an abstract factory class AbstractFactory as next step.
+ * Factory classes ShapeFactory and ColorFactory are defined where each factory extends AbstractFactory.
+ * A factory creator/generator class FactoryProducer is created.
+ */
 public class AbstractFactoryPatternMain {
     public static void main(String[] args) {
 
