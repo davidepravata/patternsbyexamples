@@ -6,7 +6,7 @@ package pattern.factorymethod.example;
  * 2) creiamo la factory AnimalFactory, la quale, a seconda del tipo di animale, richiama la corretta implementazione concreta
  */
 
-public class FactoryMethodMain {
+public class FactoryMethodPatternMain {
 
     public static void main(String[] args) {
         AnimalFactory factory = new AnimalFactory();

@@ -6,7 +6,9 @@ import pattern.command.example.CommandPatternMain;
 import pattern.composite.example.CompositePatternMain;
 import pattern.decorator.example.DecoratorPatternMain;
 import pattern.facade.example.FacadePatternMain;
-import pattern.factorymethod.example.FactoryMethodMain;
+import pattern.factorymethod.example.FactoryMethodPatternMain;
+import pattern.iterator.example.IteratorPatternMain;
+import pattern.observer.example.ObserverPatternMain;
 
 public class PatternMain {
     public static void main(String[] args) {
@@ -43,7 +45,17 @@ public class PatternMain {
 
         System.out.println("FACTORY METHOD PATTERN EXAMPLE:");
         // https://italiancoders.it/factory-method-design-pattern/
-        new FactoryMethodMain().main(null);
+        new FactoryMethodPatternMain().main(null);
+        System.out.println("________________________");
+
+        System.out.println("ITERATOR PATTERN EXAMPLE:");
+        // https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm
+        new IteratorPatternMain().main(null);
+        System.out.println("________________________");
+
+        System.out.println("OBSERVER PATTERN EXAMPLE:");
+        // https://www.tutorialspoint.com/design_pattern/observer_pattern.htm
+        new ObserverPatternMain().main(null);
         System.out.println("________________________");
     }
 
