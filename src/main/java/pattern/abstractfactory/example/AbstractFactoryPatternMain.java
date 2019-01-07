@@ -1,15 +1,15 @@
 package pattern.abstractfactory.example;
 
 /**
- * We are going to create a Shape and Color interfaces and concrete classes implementing these interfaces.
- * We create an abstract factory class AbstractFactory as next step.
- * Factory classes ShapeFactory and ColorFactory are defined where each factory extends AbstractFactory.
- * A factory creator/generator class FactoryProducer is created.
+ * Obiettivo: vogliamo creare oggetti Shape(forme). Passando alla abstract factory la stringa della forma (es. CIRCLE), ne viene creata una istanza, ignorando la relativa classe (pattern.abstractfactory.example.Circle).
+ * Implementazione:
+ * 1) creiamo l'interfaccia Shape (e Color) e classi concrete che la implementano;
+ * 2) creiamo una classe astratta AbstractFactory che restituisca una Shape(o Color) sulla base di una stringa;
+ * 3) creiamo una classe ShapeFactory che estenda AbstractFactory e restituisca un oggetto di tipo Shape sulla base di una stringa;
+ * 4) creiamo una classe FactoryProducer che restituisca l'istanza di ShapeFactory (o ColorFactory) sulla base di una stringa.
  */
 public class AbstractFactoryPatternMain {
     public static void main(String[] args) {
-
-        System.out.println("START ABSTRACT FACTORY PATTERN[");
 
         //get shape factory
         AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
@@ -52,8 +52,6 @@ public class AbstractFactoryPatternMain {
 
         //call fill method of Color Blue
         color3.fill();
-
-        System.out.println("END ABSTRACT FACTORY PATTERN]");
 
     }
 }
