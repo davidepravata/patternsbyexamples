@@ -6,6 +6,7 @@ import pattern.command.example.CommandPatternMain;
 import pattern.composite.example.CompositePatternMain;
 import pattern.decorator.example.DecoratorPatternMain;
 import pattern.facade.example.FacadePatternMain;
+import pattern.factorymethod.example.FactoryMethodMain;
 
 public class PatternMain {
     public static void main(String[] args) {
@@ -38,6 +39,11 @@ public class PatternMain {
         System.out.println("FACADE PATTERN EXAMPLE:");
         // https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
         new FacadePatternMain().main(null);
+        System.out.println("________________________");
+
+        System.out.println("FACTORY METHOD PATTERN EXAMPLE:");
+        // https://italiancoders.it/factory-method-design-pattern/
+        new FactoryMethodMain().main(null);
         System.out.println("________________________");
     }
 
